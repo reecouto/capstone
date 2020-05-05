@@ -30,7 +30,8 @@ Resources:
   JenkinsEC2Instance:
     Type: AWS::EC2::Instance
     Properties: 
-      ImageId: ami-0ce21b51cb31a48b8 
+      ImageId: ami-0ce21b51cb31a48b8
+      KeyName: capstone
       InstanceType: t3.medium
       SecurityGroupIds:
         - !Ref JenkinsSecurityGroup
