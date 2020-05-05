@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry([ credentialsId: "docker-hub", url: "" ]) {
-                    sh 'docker push prhomhyse/devops-capstone'
+                    sh 'docker push reecouto/devops-capstone'
                     }
                 }
             }
